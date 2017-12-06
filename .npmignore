@@ -1,0 +1,7 @@
+coverage.html
+node_modules
+.travis.yml
+coverage/
+*.tgz
+*.sw*
+*.un~

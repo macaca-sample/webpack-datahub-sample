@@ -1,0 +1,16 @@
+{
+  "name": "webpack-datahub-sample",
+  "version": "1.0.0",
+  "description": "webpack datahub proxy middleware sample",
+  "scripts": {
+    "dev": "webpack-dev-server --inline"
+  },
+  "keywords": [],
+  "devDependencies": {
+    "datahub-proxy-middleware": "^1.0.8",
+    "html-webpack-plugin": "^2.30.1",
+    "macaca-datahub": "^1.0.19",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.9.1"
+  }
+}
