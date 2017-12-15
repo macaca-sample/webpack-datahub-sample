@@ -7,7 +7,7 @@
     "currentScene": "default",
     "proxyContent": "{\"proxies\":[],\"useProxy\":false,\"originKeys\":[],\"currentProxyIndex\":1}",
     "params": "{\"schemaData\":[{\"field\":\"result\",\"type\":\"object\",\"require\":true,\"description\":\"desc\"}]}",
-    "scenes": "[{\"name\":\"default\",\"data\":\"{\\n  \\\"value\\\": \\\"foo\\\"\\n}\"},{\"name\":\"scene1\",\"data\":\"{\\n  \\\"value\\\": \\\"bar\\\"\\n}\"}]",
+    "scenes": "[{\"name\":\"default\",\"data\":{\"value\":\"foo\"}},{\"name\":\"scene1\",\"data\":{\"value\":\"bar\"}}]",
     "delay": "0"
   }
 ]
