@@ -14,3 +14,6 @@
 [node-url]: http://nodejs.org/download/
 
 webpack datahub proxy middleware sample
+
+- [macaca-datahub](//github.com/macacajs/macaca-datahub)
+- [datahub-proxy-middleware](//github.com/macacajs/datahub-proxy-middleware)
