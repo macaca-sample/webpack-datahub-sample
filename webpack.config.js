@@ -1,7 +1,11 @@
+'use strict';
+
 const path = require('path');
-const datahub = require('macaca-datahub');
+const DataHub = require('macaca-datahub');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const datahubProxyMiddle = require('datahub-proxy-middleware');
+
+const isTest = process.env.NODE_ENV === 'test';
 
 const datahubConfig = {
   port: 5678,
@@ -9,26 +13,42 @@ const datahubConfig = {
   store: path.join(__dirname, 'data'),
   proxy: {
     '^/api': {
-      hub: 'sample',
-    },
+      hub: 'sample'
+    }
   },
-  showBoard: true
+  showBoard: !isTest
 };
 
-const defaultDatahub = new datahub({
+const defaultDatahub = new DataHub({
   port: datahubConfig.port
 });
 
 module.exports = {
-  entry: path.join(__dirname, 'index.js'),
+  entry: {
+    index: path.join(__dirname, 'index.js'),
+  },
   output: {
     path: path.join(__dirname, '/'),
-    filename: 'bundle.js'
+    publicPath: '/dist',
+    filename: '[name].js'
+  },
+  module: {
+    loaders: [
+      {
+        test: /\.js?/,
+        loader: 'babel-loader',
+        exclude: /node_modules/
+      }, {
+        test: /\.json$/,
+        loader: 'json-loader',
+        exclude: /node_modules/
+      }
+    ]
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: path.join(__dirname, 'index.html')
-    }),
+    })
   ],
   devServer: {
     before: app => {
@@ -40,4 +60,4 @@ module.exports = {
       });
     }
   }
-}
+};

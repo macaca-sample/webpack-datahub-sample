@@ -1,3 +1,5 @@
+'use strict';
+
 var request = new XMLHttpRequest();
 request.open('GET', '/api/test1', true);
 
