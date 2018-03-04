@@ -30,10 +30,8 @@
     "html-webpack-plugin": "^2.30.1",
     "json-loader": "^0.5.7",
     "macaca-cli": "^2.0.12",
-    "macaca-coverage": "^1.0.0",
     "macaca-datahub": "^1.0.22",
     "macaca-electron": "^1.1.17",
-    "macaca-reporter": "^1.0.36",
     "macaca-wd": "^1.0.18",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
