@@ -26,6 +26,6 @@ webpack datahub proxy middleware sample
 | :---: |
 
 
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor.git), auto upated at `Sun Mar 25 2018 16:45:49 GMT+0800`.
+This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto upated at `Tue Apr 17 2018 00:46:55 GMT+0800`.
 
 <!-- GITCONTRIBUTOR_END -->
