@@ -7,7 +7,7 @@ request.onreadystatechange = function() {
   if (this.readyState === 4) {
     if (this.status >= 200 && this.status < 400) {
       var json = JSON.parse(this.responseText);
-      document.querySelector('#value').innerHTML = json.value;
+      document.querySelector('#value').innerHTML = json.data;
     } else {}
   }
 };
