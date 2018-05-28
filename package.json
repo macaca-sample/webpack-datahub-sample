@@ -33,8 +33,8 @@
     "json-loader": "^0.5.7",
     "macaca-cli": "^2.0.12",
     "macaca-datahub": "^1.0.50",
-    "macaca-electron": "^1.1.17",
-    "macaca-wd": "^1.0.18",
+    "macaca-electron": "2",
+    "macaca-wd": "^1.1.1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   }
