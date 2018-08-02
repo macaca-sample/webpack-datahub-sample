@@ -28,13 +28,13 @@
     "eslint-plugin-node": "^5.2.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "git-contributor": "^1.0.3",
+    "git-contributor": "1",
     "html-webpack-plugin": "^2.30.1",
     "json-loader": "^0.5.7",
-    "macaca-cli": "^2.0.12",
-    "macaca-datahub": "^1.0.50",
+    "macaca-cli": "2",
+    "macaca-datahub": "2",
     "macaca-electron": "2",
-    "macaca-wd": "^1.1.1",
+    "macaca-wd": "1",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.9.1"
   }

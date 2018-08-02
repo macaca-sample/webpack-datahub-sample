@@ -1,0 +1,19 @@
+{
+  "type": "request",
+  "data": {
+    "schemaData": {
+      "type": "object",
+      "required": [
+        "data"
+      ],
+      "properties": {
+        "data": {
+          "type": "string",
+          "description": "data from client side"
+        }
+      }
+    }
+  },
+  "interfaceUniqId": "92a5c5f5-640c-4600-8665-dd8e108fb959",
+  "uniqId": "9bafb069-b5ec-4dc3-bded-6375984fa1d8"
+}
