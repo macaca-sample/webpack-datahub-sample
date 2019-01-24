@@ -18,14 +18,4 @@ webpack datahub proxy middleware sample
 - [macaca-datahub](//github.com/macacajs/macaca-datahub)
 - [datahub-proxy-middleware](//github.com/macacajs/datahub-proxy-middleware)
 
-<!-- GITCONTRIBUTOR_START -->
-
-## Contributors
-
-|[<img src="https://avatars1.githubusercontent.com/u/1011681?v=4" width="100px;"/><br/><sub><b>xudafeng</b></sub>](https://github.com/xudafeng)<br/>
-| :---: |
-
-
-This project follows the git-contributor [spec](https://github.com/xudafeng/git-contributor), auto upated at `Tue Apr 17 2018 00:46:55 GMT+0800`.
-
-<!-- GITCONTRIBUTOR_END -->
+Please refer to this project directly: https://github.com/app-bootstrap/web-app-bootstrap

@@ -1,6 +1,6 @@
 {
   "protocol": "http",
-  "pathname": "test1",
+  "pathname": "api/test1",
   "method": "ALL",
   "projectUniqId": "227e9b37-2ef7-4b46-9ad6-59b4807bce2d",
   "description": "interface test",
@@ -8,6 +8,5 @@
   "proxyConfig": {
     "proxyList": []
   },
-  "contextConfig": {},
   "uniqId": "92a5c5f5-640c-4600-8665-dd8e108fb959"
 }

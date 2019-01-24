@@ -5,8 +5,6 @@ const DataHub = require('macaca-datahub');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const datahubProxyMiddle = require('datahub-proxy-middleware');
 
-const isTest = process.env.NODE_ENV === 'test';
-
 const datahubConfig = {
   port: 5678,
   hostname: '127.0.0.1',
@@ -16,7 +14,7 @@ const datahubConfig = {
       hub: 'sample'
     }
   },
-  showBoard: !isTest
+  showBoard: true,
 };
 
 const defaultDatahub = new DataHub({
@@ -33,7 +31,7 @@ module.exports = {
     filename: '[name].js'
   },
   module: {
-    loaders: [
+    rules: [
       {
         test: /\.js?/,
         loader: 'babel-loader',
@@ -47,13 +45,12 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
+      filename: 'index.html',
       template: path.join(__dirname, 'index.html')
     })
   ],
   devServer: {
-    before: app => {
-      datahubProxyMiddle(app)(datahubConfig);
-    },
+    before: app => datahubProxyMiddle(app)(datahubConfig),
     after: () => {
       defaultDatahub.startServer(datahubConfig).then(() => {
         console.log('datahub ready');
