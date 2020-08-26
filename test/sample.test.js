@@ -35,7 +35,9 @@ describe('test/sample.test.js', () => {
     it('page render should be ok', () => {
       return driver
         .getUrl(`${BASE_URL}/`)
-        .sleep(1000);
+        .sleep(500)
+        .elementById('value')
+        .hasText('default data');
     });
   });
 });
